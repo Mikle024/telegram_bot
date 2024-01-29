@@ -22,7 +22,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         String text = update.getMessage().getText();
 
         SendMessage sendMessage = new SendMessage();
-        sendMessage.getChatId(chatId);
+        sendMessage.setChatId(chatId);
         sendMessage.setText(text);
 
         try {
